@@ -6,3 +6,15 @@ git status -pokazuje pliki zmienione i w staging
 git commit -m "message" - zatwierdzenie zmian z wiadomoscia "message"
 git log - historia zatwierdzen
 git log --oneline - historia w skróconej wersji
+git checkout <commit id> - pozwala zobaczyć kod jaki byl w tym momencie
+git checkout master - wraca nas to obenego momentu
+git revert <commit id> + :wq - nie usuwa commitu ale wstawia koleny który anuluje tamte zmiany
+git reset  <commit id>  (niebezpieczne) - resetuje commity do tego id
+  (ale pamiętaj że nie usuwa plików więc można je potem dodać spowrotem)
+git reset  <commit id>  --hard - usuwa wszystko :( na zawsze...
+git branch nazwa = git checkout -b nazwa- tworzy nowa galąź projektu (od razu nas doń przenosi)
+git branch -a -pokazuje wszystkie galęzi
+git checkout nazwa -przelącza nas na konkretna galąź
+git branch -D nazwa - usuwa galąź
+git merge nazwaDolaczanejGalęzi - laczy wskazana galaz z ta na ktorej aktualnie jesteśmy
+:wq - pozwala nam wyjść z niefajnie wyglądających powiadomień np. przy konflikcie galęzi
